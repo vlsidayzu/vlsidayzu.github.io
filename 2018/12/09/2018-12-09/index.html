@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="Congratulations to Jhih-Wei Hsu, Yao-Kai Shi, Jheng-Kai Guan, and Yi-Jun Zhuo for winning the 2ed place (優等) of The CAD Contest 2018 (Problem D) http://iccad-contest.org/2018/tw/index.html    Congratu">
+<meta name="keywords" content="This is keywords">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20181209">
+<meta property="og:url" content="http://yoursite.com/2018/12/09/2018-12-09/index.html">
+<meta property="og:site_name" content="VLSI-DA Lab">
+<meta property="og:description" content="Congratulations to Jhih-Wei Hsu, Yao-Kai Shi, Jheng-Kai Guan, and Yi-Jun Zhuo for winning the 2ed place (優等) of The CAD Contest 2018 (Problem D) http://iccad-contest.org/2018/tw/index.html    Congratu">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://lh3.googleusercontent.com/1VgmazFvHO5uifljNRRR3J31XMQwC45QnD2A0ivVkNddpON6ePn8AufDa9YcGF6o67l1j7lCDPoST-jRZH2tWeiC-SuliuxZnXp5hmU5CUU4mQ0SVHp_q24MhXP9LiAUEJT8fUKJNsElNtVOxBwMbYKS0HHTPVcCFdaxwiOkM2qj_8KQBbDvGBSEM5jM4wlUNv0h6N5JMbZrtjjKMP1itF906JqDUMCw2q3gTHxZnUrzNVeM637Rc-NYrwN2azBqPSYvEErDL6RavIzrFQ6fFHAwd2FnQRlcT4Zj9bbJfU5WXSt-yBnSBeh6XU-NISHzj51B6Z8TsxjgdYb-0Mx3VCKayNFN6gxRfUbKFH3IpZYfyVEsSuFozvUQu-Hi-YHqwuYQfuVRMghN2QS3AE4rCHx7Yn7P6XrBc8rNB_Rmn8C1Ii0408deU1Y3BJTuJBw95W-LjILOtBsivaQK6DERUvJWe89zvIV6IcEemQ_6b2GIZKFxdclACkRhlbIr1_4Yceat4YXG4Vw-rDToqLxW8Vii0sTvm6OiD7cprq258m2r9mijpki4xzgs7ApiWll9_CgbxuEyNkvYUXQ87jDREqzagzYqHIPTxRG8VsXg8AWI9ZWD1ZYKRRTqk0DO9rPiMBeUi_h4XxeHhu_WWCi97blUfxZEPw=w1005-h564-no">
+<meta property="og:image" content="https://lh3.googleusercontent.com/Zq9DiM_6hzOmYcfy7z3itgs-8CUX1U1wQn4mYd73UL5UmbAvU_qTHNsucV8uXWVNIJlPFIhhs0WtblB9ZSbq0hALRQ5w1LyUMuaz7AAtydJbTqBpumknHNZpeQdRcCmVB4pC2Qc_J5XpzWwgbJfFM7WBB20NyGZWpr0qJD-ccviXHpOaCGF33z11v1rB1Y3WO-LdrRNqYR2rjqzodDh9UBi1I6-LLu1mIDLVqslkQwzNovectSWr3mipakPyC5VPMpNc4GRjSbi-obDqTX7gfZ6GbwK7zE_YwWm7PKAt8N6MnhhHfSTz2jBcZs00g-SUkvY29h6D8OrQUGxETOZovv02rR3GQZDSlOA9jnjq7OyNMGX5uZ2hDLtaPzAA10HWW1Xnn5m1d2qStp1289PImg8vkpz0gSJm8-0oOFGmDV00IA7GMeMIYt76CNbRAoWhQsU95MeASMRLoMpLbYqWWwvnyGYYfAPSNelxCJFwB3QnFc0bwgtnBbA9Mq77cs-DxHhIFXI5nWxzKFbushkzV1shUXvDxsYMz6ilQhFFAlTBow6EaLMa55kj3q0MjRQgnFpI1tbCuevdgTpsPSndO2KnATCHP1KRAA71mh8FXf4BhUrvjghf9VBP8FS2DBx1ttEjOIg_1AaNBHUDEQBh5-R6q4RPBA=w983-h738-no">
+<meta property="og:image" content="https://lh3.googleusercontent.com/2CxpeY8AcRlzmIKzSpyjDqJ7xViMeB0mkDNT_YcaUveMp0cUYjdyV1wbG2A81x6-NvATVfDn2fRwwSQfCUqd5eDpopVfEcuXi4jFMlFECRnwPsu6aKIMrni0IqVbIBGptB7xEpWliuoIeZfDnL6sfXK1asmvg7ZsHsiECbcHwcoLebn0jYgVaE4BMAQoGHMAxnHgXzPY7hc3hGxQxjnl4JaVEomMbSAUAEIUUnHfYyEuaZz9uHjHM9w0PyuAvI13r7dZ1fd2-htKt-aZaJbCgpJVHh6kDREAP1KwrxKhGsWUbp_4vfrJcPcNGYDk3S1kEXniWVjYmmlo1fa_jW8GOQuofcKNxcxF-SH10lP2xz2NqcITv59BlBDv9li0amPR5bRcs2tA298xPvw1H4ZugeR0n4TZI3_DuRFV6pjZOfiQ_EESg_phoFGZV3YgOZF1JmMdvzfUPrN5IaHT5SJ70wwtVH00ZIWpCOr4WVEqCqt3IeYyfv4h0fuA5dbQVPOe6xevPlaOiXAy_GXYrnHAA4bS-PKqg9StIBMCJDCXbLWOwkhlSxIbuvHXcaWtOWmeuPOHoJwDrDgbdReUKVP17wGecHyUOqOmci3TD95a-dVQ2RG0akWTsePM1BL5pTlMIRi4KFd6hviW2q681yckbowJwm82cQ=w556-h742-no">
+<meta property="og:image" content="https://lh3.googleusercontent.com/Pqv96rnMCEFghtyoz4JgiCOax2XYZG4aLwe70eC6iLrF6n87zBTndLWW517bqyqOQtVIL_JO9qTssUM1zMbafjVkiRxQPrzgPHaCnmPGKPewxOHtLHhwzceCely89EOoqQy73201vTBRPBPT61pfhfU4SB1xkMFCzdwbcRNfP2YE9d5u5JJCFTks2PU4ZWiX15WwuaX_WW5gZY8vv8jgFh0bxVVbRvSD6b_6nwWQV6k7oJtax-O8SQIgXFXIiQzEpD8EvJA-W7uRuYt9DKn9JvDEtvRD-PK0m7wjrHS7BAWrfb-YKA_NBDkS31UYMUdC1kH5g9RyhpnfPvpUGDefdu7AMqA2VRFLiQTVBspfRUTafJsgooRuzd-6gEQYD-ZkY2VffcqXdvLR0E-u9_QdO9qXH6lJnoTzHZejrbDnfgIkAhWVtkqfjD53GozElecKDiq_woPgnKI0DQl9TmSNI8Fo79OYeLOLq3IGLG3treMBEbZImwCwTJxYhAA0N95LVaZQ8xxGy6HoPzGDl2tb2cu31ZxKg-mug1HkSoFCaMgVvMwmrf30pxNriLyGo6VB0SZjz-62GzgadU5DEY5_g8y24yroWci7XEl7B44wNRBa8e5wnOB-JM0RcvT5kIh18pDGkGoApEa2Jg-7hUltmlC5JGbKjw=w584-h438-no">
+<meta property="og:updated_time" content="2019-05-09T14:52:22.528Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="20181209">
+<meta name="twitter:description" content="Congratulations to Jhih-Wei Hsu, Yao-Kai Shi, Jheng-Kai Guan, and Yi-Jun Zhuo for winning the 2ed place (優等) of The CAD Contest 2018 (Problem D) http://iccad-contest.org/2018/tw/index.html    Congratu">
+<meta name="twitter:image" content="https://lh3.googleusercontent.com/1VgmazFvHO5uifljNRRR3J31XMQwC45QnD2A0ivVkNddpON6ePn8AufDa9YcGF6o67l1j7lCDPoST-jRZH2tWeiC-SuliuxZnXp5hmU5CUU4mQ0SVHp_q24MhXP9LiAUEJT8fUKJNsElNtVOxBwMbYKS0HHTPVcCFdaxwiOkM2qj_8KQBbDvGBSEM5jM4wlUNv0h6N5JMbZrtjjKMP1itF906JqDUMCw2q3gTHxZnUrzNVeM637Rc-NYrwN2azBqPSYvEErDL6RavIzrFQ6fFHAwd2FnQRlcT4Zj9bbJfU5WXSt-yBnSBeh6XU-NISHzj51B6Z8TsxjgdYb-0Mx3VCKayNFN6gxRfUbKFH3IpZYfyVEsSuFozvUQu-Hi-YHqwuYQfuVRMghN2QS3AE4rCHx7Yn7P6XrBc8rNB_Rmn8C1Ii0408deU1Y3BJTuJBw95W-LjILOtBsivaQK6DERUvJWe89zvIV6IcEemQ_6b2GIZKFxdclACkRhlbIr1_4Yceat4YXG4Vw-rDToqLxW8Vii0sTvm6OiD7cprq258m2r9mijpki4xzgs7ApiWll9_CgbxuEyNkvYUXQ87jDREqzagzYqHIPTxRG8VsXg8AWI9ZWD1ZYKRRTqk0DO9rPiMBeUi_h4XxeHhu_WWCi97blUfxZEPw=w1005-h564-no">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"remove","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/12/09/2018-12-09/">
+
+
+
+
+
+  <title>20181209 | VLSI-DA Lab</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">VLSI-DA Lab</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">VLSI Design Automation Lab</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-announcement">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Announcement
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-lab-introduction">
+          <a href="/lab_introduction/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-address-card"></i> <br>
+            
+            Lab Introduction
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-advisor-introduction">
+          <a href="/introduction/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-address-card"></i> <br>
+            
+            Advisor Introduction
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-publicationlist">
+          <a href="/publicationList/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-edit"></i> <br>
+            
+            PublicationList
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-members">
+          <a href="/members/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-users"></i> <br>
+            
+            Members
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/09/2018-12-09/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yu-Guang Chen">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="VLSI-DA Lab">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">20181209</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-09T00:00:00+08:00">
+                2018-12-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>Congratulations to <strong>Jhih-Wei Hsu</strong>, <strong>Yao-Kai Shi</strong>, <strong>Jheng-Kai Guan</strong>, and <strong>Yi-Jun Zhuo</strong> for winning the 2ed place (優等) of The CAD Contest 2018 (Problem D)</p>
+<p><a href="http://iccad-contest.org/2018/tw/index.html" target="_blank" rel="noopener">http://iccad-contest.org/2018/tw/index.html</a></p>
+<p><img src="https://lh3.googleusercontent.com/1VgmazFvHO5uifljNRRR3J31XMQwC45QnD2A0ivVkNddpON6ePn8AufDa9YcGF6o67l1j7lCDPoST-jRZH2tWeiC-SuliuxZnXp5hmU5CUU4mQ0SVHp_q24MhXP9LiAUEJT8fUKJNsElNtVOxBwMbYKS0HHTPVcCFdaxwiOkM2qj_8KQBbDvGBSEM5jM4wlUNv0h6N5JMbZrtjjKMP1itF906JqDUMCw2q3gTHxZnUrzNVeM637Rc-NYrwN2azBqPSYvEErDL6RavIzrFQ6fFHAwd2FnQRlcT4Zj9bbJfU5WXSt-yBnSBeh6XU-NISHzj51B6Z8TsxjgdYb-0Mx3VCKayNFN6gxRfUbKFH3IpZYfyVEsSuFozvUQu-Hi-YHqwuYQfuVRMghN2QS3AE4rCHx7Yn7P6XrBc8rNB_Rmn8C1Ii0408deU1Y3BJTuJBw95W-LjILOtBsivaQK6DERUvJWe89zvIV6IcEemQ_6b2GIZKFxdclACkRhlbIr1_4Yceat4YXG4Vw-rDToqLxW8Vii0sTvm6OiD7cprq258m2r9mijpki4xzgs7ApiWll9_CgbxuEyNkvYUXQ87jDREqzagzYqHIPTxRG8VsXg8AWI9ZWD1ZYKRRTqk0DO9rPiMBeUi_h4XxeHhu_WWCi97blUfxZEPw=w1005-h564-no" alt="image not found"><br>
+<img src="https://lh3.googleusercontent.com/Zq9DiM_6hzOmYcfy7z3itgs-8CUX1U1wQn4mYd73UL5UmbAvU_qTHNsucV8uXWVNIJlPFIhhs0WtblB9ZSbq0hALRQ5w1LyUMuaz7AAtydJbTqBpumknHNZpeQdRcCmVB4pC2Qc_J5XpzWwgbJfFM7WBB20NyGZWpr0qJD-ccviXHpOaCGF33z11v1rB1Y3WO-LdrRNqYR2rjqzodDh9UBi1I6-LLu1mIDLVqslkQwzNovectSWr3mipakPyC5VPMpNc4GRjSbi-obDqTX7gfZ6GbwK7zE_YwWm7PKAt8N6MnhhHfSTz2jBcZs00g-SUkvY29h6D8OrQUGxETOZovv02rR3GQZDSlOA9jnjq7OyNMGX5uZ2hDLtaPzAA10HWW1Xnn5m1d2qStp1289PImg8vkpz0gSJm8-0oOFGmDV00IA7GMeMIYt76CNbRAoWhQsU95MeASMRLoMpLbYqWWwvnyGYYfAPSNelxCJFwB3QnFc0bwgtnBbA9Mq77cs-DxHhIFXI5nWxzKFbushkzV1shUXvDxsYMz6ilQhFFAlTBow6EaLMa55kj3q0MjRQgnFpI1tbCuevdgTpsPSndO2KnATCHP1KRAA71mh8FXf4BhUrvjghf9VBP8FS2DBx1ttEjOIg_1AaNBHUDEQBh5-R6q4RPBA=w983-h738-no" alt="image not found"></p>
+<hr>
+<p>Congratulations to <strong>Yu-Yi Lin</strong> for the Best Poster Presentation Award!</p>
+<p>Topic: <strong>An Efficient NBTI-Aware Wake-Up Strategy for Power-Gated Designs</strong></p>
+<p><img src="https://lh3.googleusercontent.com/2CxpeY8AcRlzmIKzSpyjDqJ7xViMeB0mkDNT_YcaUveMp0cUYjdyV1wbG2A81x6-NvATVfDn2fRwwSQfCUqd5eDpopVfEcuXi4jFMlFECRnwPsu6aKIMrni0IqVbIBGptB7xEpWliuoIeZfDnL6sfXK1asmvg7ZsHsiECbcHwcoLebn0jYgVaE4BMAQoGHMAxnHgXzPY7hc3hGxQxjnl4JaVEomMbSAUAEIUUnHfYyEuaZz9uHjHM9w0PyuAvI13r7dZ1fd2-htKt-aZaJbCgpJVHh6kDREAP1KwrxKhGsWUbp_4vfrJcPcNGYDk3S1kEXniWVjYmmlo1fa_jW8GOQuofcKNxcxF-SH10lP2xz2NqcITv59BlBDv9li0amPR5bRcs2tA298xPvw1H4ZugeR0n4TZI3_DuRFV6pjZOfiQ_EESg_phoFGZV3YgOZF1JmMdvzfUPrN5IaHT5SJ70wwtVH00ZIWpCOr4WVEqCqt3IeYyfv4h0fuA5dbQVPOe6xevPlaOiXAy_GXYrnHAA4bS-PKqg9StIBMCJDCXbLWOwkhlSxIbuvHXcaWtOWmeuPOHoJwDrDgbdReUKVP17wGecHyUOqOmci3TD95a-dVQ2RG0akWTsePM1BL5pTlMIRi4KFd6hviW2q681yckbowJwm82cQ=w556-h742-no" alt="image not found"><br>
+<img src="https://lh3.googleusercontent.com/Pqv96rnMCEFghtyoz4JgiCOax2XYZG4aLwe70eC6iLrF6n87zBTndLWW517bqyqOQtVIL_JO9qTssUM1zMbafjVkiRxQPrzgPHaCnmPGKPewxOHtLHhwzceCely89EOoqQy73201vTBRPBPT61pfhfU4SB1xkMFCzdwbcRNfP2YE9d5u5JJCFTks2PU4ZWiX15WwuaX_WW5gZY8vv8jgFh0bxVVbRvSD6b_6nwWQV6k7oJtax-O8SQIgXFXIiQzEpD8EvJA-W7uRuYt9DKn9JvDEtvRD-PK0m7wjrHS7BAWrfb-YKA_NBDkS31UYMUdC1kH5g9RyhpnfPvpUGDefdu7AMqA2VRFLiQTVBspfRUTafJsgooRuzd-6gEQYD-ZkY2VffcqXdvLR0E-u9_QdO9qXH6lJnoTzHZejrbDnfgIkAhWVtkqfjD53GozElecKDiq_woPgnKI0DQl9TmSNI8Fo79OYeLOLq3IGLG3treMBEbZImwCwTJxYhAA0N95LVaZQ8xxGy6HoPzGDl2tb2cu31ZxKg-mug1HkSoFCaMgVvMwmrf30pxNriLyGo6VB0SZjz-62GzgadU5DEY5_g8y24yroWci7XEl7B44wNRBa8e5wnOB-JM0RcvT5kIh18pDGkGoApEa2Jg-7hUltmlC5JGbKjw=w584-h438-no" alt="image not found"></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/12/07/2018-12-07/" rel="next" title="20181207">
+                <i class="fa fa-chevron-left"></i> 20181207
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/12/15/2018-12-15/" rel="prev" title="20181215">
+                20181215 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Yu-Guang Chen</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="超大型積體電路設計自動化實驗室簡介     Introduction to VLSI Design Automation (VLSI-DA) Lab       Andy Y.G. Chen     2018.09.01  隨著半導體製造製程的進步與電晶體體積的縮小，超大型積體電路晶片往往能達到體積小、功能複雜、效能優越等特性。超大型積體電路晶片的應用十分廣泛，不論是消費型電子、車用電子">
+<meta name="keywords" content="This is keywords">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Lab Introduction">
+<meta property="og:url" content="http://yoursite.com/lab_introduction/index.html">
+<meta property="og:site_name" content="VLSI-DA Lab">
+<meta property="og:description" content="超大型積體電路設計自動化實驗室簡介     Introduction to VLSI Design Automation (VLSI-DA) Lab       Andy Y.G. Chen     2018.09.01  隨著半導體製造製程的進步與電晶體體積的縮小，超大型積體電路晶片往往能達到體積小、功能複雜、效能優越等特性。超大型積體電路晶片的應用十分廣泛，不論是消費型電子、車用電子">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://lh3.googleusercontent.com/ZGjM4JNrOAuixSLxOt1Wejwh2o7aEnUUxugYHz9H-nSzIzB8wQvRDNVjsWW_HjIm-NK5S5DEpgk6vcohzypO8BNW7Gyel7fTRHCYCNt_owPP_gLJ1GOH4rFCmdYxtjgwzJn4JfwNDYwghI_k319aldKgT2dQC6fedQscv_Z1_WGk9G_g2sIgfp8awLUtV-2RTGt-TQvBXPGDvI_foyQLO7OniUjj0mazLwXt8x28PJPgyNew49JGYGNqJLdBlANeRFqJ0Rv3m9SZdrzVD_zeoF5TWdmCwfDN79VrnJ9cAfqCD-Zs9pJhRB4G_KwClakLQ_Fzm0WfYC7VjsT7lPsnL85Dufx_h_kw64cQlubwsYifFN0Z_k47yHwXo-3pty86iWQ-hnEVHeT6p2UzpxGG6ikRqJD5RNjHRl2ihCPgKRPgzSVJJNtQo4qb2-b4b_ktRo_Qco1ftqRRJalsa4BxfMzShq37rptgLyigOp5UZ8CLy8a4bCc3z5qoOikLfQ-wXECf-sTlKVyzij_hCVo-3YmCBOLU5DNWqHsEUlcb5L3B2JywEcahI0FCG9f_EjocUN0Xz2M6WYwISGI2DdA82MlsFfNIW9VLuP_Zc1OCtGv_jKaYsr-3aSTyquHURxE=w738-h581-no">
+<meta property="og:image" content="https://lh3.googleusercontent.com/lDfc4xgxvskLV00TiRfKY3LRW6izjzHYxxaURZinKiJyjrgcmsNvW2cT2Dakimzh5hGTKLyayv5NoN36twI1z-WoDhopK2-yPgSbjEmxpu2S7NAeyC7XrUokdORvtPXM1TTMxq2gU-ZYdRH_N3DLyQJ4l1nypFcX-oBtrO7eRd6_aoD-icwLCDMSQ4eP134u4F7T8qWNdM9IlSBvp6g2-Ji2g-eNmmwYKhVNTymYi4BPazYnphZBpqCgOQGEf0DueMVji3xc0xM8JRj1aGjKTmrr0-x_x9A8Mq9sApiHAQy0d5vliVDHh_FrL2GmxynFy3vGD2xFyqpPsL4M4b15y_un7V8ZSwYLGCaM8Wu7NMyPvhte5_oU_HNPENiuFBH4jM7BKoUN7kwi7DuT3QCxo1wW8UnHpU9jhivNmvPbC1xpA7wL6ZuZUZmSfX9bo3dWZmSoM8ez2FD0I_glP94FjuF4KCy9W0LZvmREC9M_jzr3Ht4Po2EQF4DJSooWMHOa4ME1qaN_9cjXINSzANSaM8rWKyh1mSzc9QM2LaL5HyWHlppoKJbUUD_WR5qB-fTMN0NO8p7hb3GVVtrw8i6AEi9P134pOkbbpi2lq7rVnP_Fq6c73b7xe_vKAlQCxiI=w553-h331-no">
+<meta property="og:updated_time" content="2019-05-09T14:00:01.113Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Lab Introduction">
+<meta name="twitter:description" content="超大型積體電路設計自動化實驗室簡介     Introduction to VLSI Design Automation (VLSI-DA) Lab       Andy Y.G. Chen     2018.09.01  隨著半導體製造製程的進步與電晶體體積的縮小，超大型積體電路晶片往往能達到體積小、功能複雜、效能優越等特性。超大型積體電路晶片的應用十分廣泛，不論是消費型電子、車用電子">
+<meta name="twitter:image" content="https://lh3.googleusercontent.com/ZGjM4JNrOAuixSLxOt1Wejwh2o7aEnUUxugYHz9H-nSzIzB8wQvRDNVjsWW_HjIm-NK5S5DEpgk6vcohzypO8BNW7Gyel7fTRHCYCNt_owPP_gLJ1GOH4rFCmdYxtjgwzJn4JfwNDYwghI_k319aldKgT2dQC6fedQscv_Z1_WGk9G_g2sIgfp8awLUtV-2RTGt-TQvBXPGDvI_foyQLO7OniUjj0mazLwXt8x28PJPgyNew49JGYGNqJLdBlANeRFqJ0Rv3m9SZdrzVD_zeoF5TWdmCwfDN79VrnJ9cAfqCD-Zs9pJhRB4G_KwClakLQ_Fzm0WfYC7VjsT7lPsnL85Dufx_h_kw64cQlubwsYifFN0Z_k47yHwXo-3pty86iWQ-hnEVHeT6p2UzpxGG6ikRqJD5RNjHRl2ihCPgKRPgzSVJJNtQo4qb2-b4b_ktRo_Qco1ftqRRJalsa4BxfMzShq37rptgLyigOp5UZ8CLy8a4bCc3z5qoOikLfQ-wXECf-sTlKVyzij_hCVo-3YmCBOLU5DNWqHsEUlcb5L3B2JywEcahI0FCG9f_EjocUN0Xz2M6WYwISGI2DdA82MlsFfNIW9VLuP_Zc1OCtGv_jKaYsr-3aSTyquHURxE=w738-h581-no">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"remove","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/lab_introduction/">
+
+
+
+
+
+  <title>Lab Introduction | VLSI-DA Lab</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">VLSI-DA Lab</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">VLSI Design Automation Lab</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-announcement">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Announcement
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-lab-introduction">
+          <a href="/lab_introduction/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-address-card"></i> <br>
+            
+            Lab Introduction
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-advisor-introduction">
+          <a href="/introduction/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-address-card"></i> <br>
+            
+            Advisor Introduction
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-publicationlist">
+          <a href="/publicationList/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-edit"></i> <br>
+            
+            PublicationList
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-members">
+          <a href="/members/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-users"></i> <br>
+            
+            Members
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+    
+    
+    <div class="post-block page">
+      <header class="post-header">
+
+	<h1 class="post-title" itemprop="name headline">Lab Introduction</h1>
+
+
+
+</header>
+
+      
+      
+      
+      <div class="post-body">
+        
+        
+          <h2 style="text-align:center">
+    超大型積體電路設計自動化實驗室簡介<br>
+    Introduction to VLSI Design Automation (VLSI-DA) Lab
+</h2>
+<p style="text-align:right">
+    Andy Y.G. Chen<br>
+    2018.09.01
+</p>
+<p>隨著半導體製造製程的進步與電晶體體積的縮小，超大型積體電路晶片往往能達到體積小、功能複雜、效能優越等特性。超大型積體電路晶片的應用十分廣泛，不論是消費型電子、車用電子、醫療電子、綠能電子、人工智慧、高效運算、物聯網及其相關系統，都已面臨到設計及整合複雜度急增的問題。為了實現多樣化的功能，單一晶片可能包含千萬甚至上億個個電晶體，大幅度的提高這了晶片設計的複雜度及困難度。</p>
+<p><strong>超大型積體電路設計自動化(VLSI-DA)，是指利用計算機輔助設計（CAD）軟體，來解決超大型積體電路（VLSI）晶片在設計過程中所遇到的大規模、高複雜度、及高難度的問題</strong>，包含但不限於功能設計(function design)、合成(synthesis)、驗證(verification)、物理設計(physical design)，包含布局(Placement)、布線(Route)、平面布置(Floorplan)、設計規則檢查(Design Rule Check, DRC)等設計流程(如Fig1)。為了解決這些極具挑戰性的問題，我們需要有能力將晶片設計流程中所產生的問題轉化為程式所能解決的問題(computational problem)，並開發適當的演算法來有效率(efficient)及有效果(effective)的解決這些高難度的挑戰。<strong>本實驗室研究的主要方向，即是解決現今超大型積體電路設計相關的學界或業界中真實存在之高難度問題，開發適當的演算法，並將演算法實現為計算機輔助設計軟體，以程式來解決問題。</strong></p>
+<p>具體而言，本實驗室目前之主要研究領域為超大型積體電路設計自動化(VLSI-DA)中低功耗設計優化(low power design optimization)以及可靠度(reliability)相關議題，研究內容包含：(1)考量動態電壓調變、動態邏輯重構設計、喚醒排程、以及老化現象之智慧電源控制機制(如Fig2)；(2)利用機器學習演算法進行EDA問題的最佳化，特別是最佳運行電壓決策及晶片健康狀態預估；(3)新興EDA技術如多位元回覆暫存器、三維晶片等之設計與佈局。詳細的研究內容與成果請參閱實驗室研究成果及Publication list。</p>
+<p><img src="https://lh3.googleusercontent.com/ZGjM4JNrOAuixSLxOt1Wejwh2o7aEnUUxugYHz9H-nSzIzB8wQvRDNVjsWW_HjIm-NK5S5DEpgk6vcohzypO8BNW7Gyel7fTRHCYCNt_owPP_gLJ1GOH4rFCmdYxtjgwzJn4JfwNDYwghI_k319aldKgT2dQC6fedQscv_Z1_WGk9G_g2sIgfp8awLUtV-2RTGt-TQvBXPGDvI_foyQLO7OniUjj0mazLwXt8x28PJPgyNew49JGYGNqJLdBlANeRFqJ0Rv3m9SZdrzVD_zeoF5TWdmCwfDN79VrnJ9cAfqCD-Zs9pJhRB4G_KwClakLQ_Fzm0WfYC7VjsT7lPsnL85Dufx_h_kw64cQlubwsYifFN0Z_k47yHwXo-3pty86iWQ-hnEVHeT6p2UzpxGG6ikRqJD5RNjHRl2ihCPgKRPgzSVJJNtQo4qb2-b4b_ktRo_Qco1ftqRRJalsa4BxfMzShq37rptgLyigOp5UZ8CLy8a4bCc3z5qoOikLfQ-wXECf-sTlKVyzij_hCVo-3YmCBOLU5DNWqHsEUlcb5L3B2JywEcahI0FCG9f_EjocUN0Xz2M6WYwISGI2DdA82MlsFfNIW9VLuP_Zc1OCtGv_jKaYsr-3aSTyquHURxE=w738-h581-no" alt="image not found"><br>
+<strong>Fig1. VLSI Design Flow</strong></p>
+<p><img src="https://lh3.googleusercontent.com/lDfc4xgxvskLV00TiRfKY3LRW6izjzHYxxaURZinKiJyjrgcmsNvW2cT2Dakimzh5hGTKLyayv5NoN36twI1z-WoDhopK2-yPgSbjEmxpu2S7NAeyC7XrUokdORvtPXM1TTMxq2gU-ZYdRH_N3DLyQJ4l1nypFcX-oBtrO7eRd6_aoD-icwLCDMSQ4eP134u4F7T8qWNdM9IlSBvp6g2-Ji2g-eNmmwYKhVNTymYi4BPazYnphZBpqCgOQGEf0DueMVji3xc0xM8JRj1aGjKTmrr0-x_x9A8Mq9sApiHAQy0d5vliVDHh_FrL2GmxynFy3vGD2xFyqpPsL4M4b15y_un7V8ZSwYLGCaM8Wu7NMyPvhte5_oU_HNPENiuFBH4jM7BKoUN7kwi7DuT3QCxo1wW8UnHpU9jhivNmvPbC1xpA7wL6ZuZUZmSfX9bo3dWZmSoM8ez2FD0I_glP94FjuF4KCy9W0LZvmREC9M_jzr3Ht4Po2EQF4DJSooWMHOa4ME1qaN_9cjXINSzANSaM8rWKyh1mSzc9QM2LaL5HyWHlppoKJbUUD_WR5qB-fTMN0NO8p7hb3GVVtrw8i6AEi9P134pOkbbpi2lq7rVnP_Fq6c73b7xe_vKAlQCxiI=w553-h331-no" alt="image not found"><br>
+<strong>Fig2. A cross-layer Smart Power Management (SPM) solution</strong></p>
+<h3>實驗室研究成果</h3>
+<p>  截至2018年09月，本實驗室之相關研究成果(包含實驗室主持人於求學時段之研究成果)共計有國際頂尖期刊論文2篇(SCI，EI)，book chapter 1篇(CRC Publishing 2015, ISBN: 978-1498710367)，以及國際頂尖研討會議論文9篇，其中1篇更獲提名為最佳論文獎候選人。相關研究成果亦獲得<code>2016年台灣半導體產業協會博士生獎</code>、<code>2014年聯詠科技博士班獎學金</code>、以及<code>Asia and South Pacific Design Automation Conference (ASP-DAC) 2016 SIGDA Student Research Forum Most Popular Poster Award</code>。實驗室主持人目前為相關領域國際頂尖期刊<code>IEEE Transactions on Very Large Scale Integration (IEEE TVLSI)</code> 及 <code>IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (IEEE TCAD)</code>之審稿人(reviewer)，亦為國際研討會議<code>China Semiconductor Technology International Conference (CSTIC)</code> 之TPC Member。</p>
+<h3>實驗室目前執行中計畫</h3>
+<ul>
+<li>
+<p>(一) 考量老化現象之低功耗設計可靠度分析及優化策略<br>
+  隨著IC製程的進步與電晶體體積的縮小，現今的晶片設計往往能達到體積小、功能複雜、效能優越等特性，且被廣泛地運用於可攜帶式裝置如遠端感測器、智慧可攜式裝置等。考量其有限的電源供應，低功耗設計成為實現此類應用不可或缺的技術。另一方面，晶片之老化現象也因製程的縮小及高電源密度/高執行溫度而更為顯著，對晶片的可靠度造成了威脅。為了解決晶片的高功耗及可靠度問題，低功耗(low power)設計及老化考量(aging-aware)設計之相關技術成為晶片設計不可或缺的環節，許多相關的技術也相繼被提出。雖然已提出的技術能降低晶片功耗與增加其可靠度，但在其實作方法(implementation)及動態運作(runtime operation)上，仍有許多高挑戰性的問題尚待解決。因此，在這個三年期的計畫中，我們希望以現有的低功耗及老化考量設計方法為基礎，藉由分析低功耗設計與老化考量設計的關聯性，提出一個適當的整合及電腦輔助設計(computer aided design, CAD)的演算法，使得這些挑戰能有效率的被解決。</p>
+<p>我們的計畫目標將解決以下三個困難的問題:</p>
+<ol>
+<li><strong><ins>考量負偏壓溫度不穩定效應之電源閘控喚醒排程策略開發</ins></strong></li>
+<li><strong><ins>考量負偏壓溫度不穩定效應且適用於多模組晶片之動態電壓調變策略開發</ins></strong></li>
+<li><strong><ins>利用機器學習演算法對於晶片健康狀況之預估與晶片回收再利用評估演算法開發</ins></strong></li>
+</ol>
+<p>此計畫的規劃內容呼應了最新半導體產業的發展趨勢，並利用AI及機器學習等方法改善傳統捷思演算法(heuristic)的不足，以對於大邏輯閘數(large gate counts)的晶片進行高可靠度之低功耗設計。具體而言，我們不僅針對晶片老化現象提出適當的喚醒排程演算法及動態電壓調變演算法，更進一步的提出晶片老化情況之預估方法及晶片回收策略，這些研究成果可應用於消費性電子產品(如:手持式裝置)及大型工業生產機台(如:自動化製造)等，以期能解決現今晶片設計在低功耗設計與老化考量設計中實際遇到的問題。</p>
+</li>
+<li>
+<p>(二) 教育部高等教育深耕計畫教學精進補助專案(數位系統設計課程)</p>
+<ul>
+<li>本課程為資訊工程學系大二必修課程，1071學期為本人第二次教授此課程，同時為第一次採用英語授課，亦為第一次嘗試採用翻轉教室教學。為更有效率進行教學，同時提供學生多元學習管道，擬採用預錄影片及翻轉教室之概念，透過影片讓學生能在課前先學習重要理論，在課堂上則著重理論應用及解題，以結合理論及實務。為提升學生學習動機及興趣，本課程將採用問題導向式教學，透過提出具體的問題及設定達成之目標，來引發學生學習之動機。同時為提升學界課程與業界實務之連結，擬邀請相關業界人士來課堂舉辦講座，將業界當前之真實問題帶入課堂，亦更能讓學生了解該課程理論的實際應用。</li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      
+      
+      
+    </div>
+    
+    
+    
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Yu-Guang Chen</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
